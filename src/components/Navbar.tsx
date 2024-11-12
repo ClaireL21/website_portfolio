@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 import Link from 'next/link'
 
@@ -10,21 +10,23 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
     {   label: "About",
-        page: "/"
+        page: "/",
     },
     {   label: "Projects",
-        page: "/projects"
+        page: "/projects",
     },
     {   label: "Art",
-        page: "/art"
+        page: "/art",
     },
     {   label: "For Fun",
-        page: "/forfun"
+        page: "/forfun",
     }
 ]
-
+const handleClick = (NAV_ITEMS)
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
+    const [clickedIndex, setClickedIndex] = useState(1)
+
     return (
         <header className={`w-full mx-auto px-10 fixed top-0 z-50 bg-white`}>
             <div className = "justify-between md:items-center md:flex">
@@ -56,9 +58,12 @@ const Navbar = () => {
                                         key={idx}
                                         href={item.page}
                                         className={
-                                            `block lg:inline-block font-semibold hover:text-yellow-600`
+                                            `block lg:inline-block hover:text-yellow-600 ${clickedIndex == idx ? "font-bold" : "font-regular"}`
                                         }
-                                        onClick={() => setNavbar(!navbar)}
+                                        onClick={() => {
+                                            setNavbar(!navbar); 
+                                            setClickedIndex(idx);
+                                        }}
                                         >{item.label}
                                     </Link>
                                 )
