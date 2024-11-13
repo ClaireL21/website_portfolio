@@ -28,11 +28,11 @@ const Navbar = () => {
     const [clickedIndex, setClickedIndex] = useState(0)
 
     return (
-        <header className={`w-full mx-auto px-10 fixed top-0 z-50 bg-slate-200 border-b border-slate-300`}>
+        <header className={`w-full mx-auto px-10 fixed top-0 z-50 bg-gray border-b border-med_gray`}>
             <div className = "justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3">
-                        <Link href="/" className="hover:text-yellow-600">
+                        <Link href="/" className="hover:text-def_yellow">
                             <div className="md:block">
                                 <h2 className="text-2xl font-bold"> Claire Lu</h2>
                             </div>
