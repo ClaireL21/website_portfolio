@@ -19,7 +19,7 @@ const AboutSection = () => {
         <h1 className="text-center font-bold text-3xl">
             About
         </h1>
-        <div className="flex flex-col text-center items-center justify-center mt-10 my-0 px:10 lg:px-40 sm:py-10 md:flex-row md:space-x-10 md:text-left md:py-0">
+        <div className="flex flex-col text-center items-center justify-center mt-10 px-10 lg:px-40 md:flex-row md:space-x-8 md:text-left">
           <div className="md:w-2/5">
             <Image className="" src="/headshot_rect_small.jpg" alt="" width={400} height={400}/>
           </div>
@@ -41,7 +41,7 @@ const AboutSection = () => {
                 <span className="font-bold">{"proceduralism"}</span>{" "}
                 and{" "} 
                 <span className="font-bold">{"non photorealistic rendering"}</span>
-                {" "}techniques. Feel free to check out some of my projects where I explore these topics!
+                {" "}techniques. Feel free to check out some of my projects exploring these topics!
               </p>
               <br/>
               <p>
