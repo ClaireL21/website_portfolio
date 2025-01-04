@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+    images: {
+        loader: 'custom',
+        loaderFile: './my-loader.ts',
+      },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
   //basePath: '/website_portfolio',
 };
 

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { HiArrowDown } from "react-icons/hi"
 import { Link as JumpAnchor} from "react-scroll/modules"
 import AboutSection from "../components/AboutSection"
