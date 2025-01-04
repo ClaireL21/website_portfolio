@@ -7,6 +7,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  basePath: '/website_portfolio',
 };
 
 //module.exports = nextConfig;
