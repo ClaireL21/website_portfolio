@@ -1,22 +1,22 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: "Projects | Claire Lu"
+  title: "For Fun | Claire Lu"
 }
 
-export default function ProjectsPage() {
+export default function ForFunPage() {
     return (
         <main>
-        <ProjectsSection/>
+        <ForFunSection/>
         </main>
       );
 }
 
-const ProjectsSection = () => {
+const ForFunSection = () => {
     return (
-        <section id="projects">
+        <section id="forfun">
             <h1 className="text-center font-bold text-3xl">
-                Projects
+                For Fun
             </h1>
         </section>
     )
