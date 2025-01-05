@@ -17,7 +17,7 @@ const ProjectSection = () => {
                                 <div className="flex flex-col animate-slideUpCubiBezier animation-delay-1 md:flex-col md:space-x-4">
                                     <div className="mt-8">
                                         <Link href={project.link} target="_blank">
-                                        <ExportedImage className="" src={project.image} alt="" width={800} height={800}/>
+                                        <ExportedImage className="w-full h-52 object-cover" src={project.image} alt=""/>
                                         </Link>
                                     </div>
                                     <div className="mt-4 text-left">

@@ -6,7 +6,7 @@ const projects = [
     {
         name: "Mini Minecraft: Pandora's Blocks",
         description: 
-            "An Avatar inspired mini version of minecraft! A group final project for CIS 4600/5600.", 
+            "An Avatar inspired mini version of minecraft!", 
         image: thumb_mc,
         github: "",
         link: "/projects/miniMinecraft",

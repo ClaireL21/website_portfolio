@@ -18,11 +18,11 @@ const AboutSection = () => {
             <ExportedImage className="" src={headshotImage} alt="" width={400} height={400}/>
           </div>
           <div className="md:w-1/2 md:mt-2">
-            <h1 className="font-bold text-3xl mt-6 lg:mt-0">Hi, I'm Claire!</h1>
+            <h1 className="font-bold text-2xl mt-6 lg:mt-0">Hi, I'm Claire!</h1>
             <div className='mt-4 mb-6 mb-6 text-base'>
               <p>
                 I'm a senior studying{" "}
-                <a href="http://cg.cis.upenn.edu/dmd.html" className="font-semibold text-def_yellow hover:text-hover_yellow">
+                <a href="http://cg.cis.upenn.edu/dmd.html" className="custom-highlighted-text">
                     Digital Media Design (DMD)
                 </a>
                 , an interdisciplinary program between computer 
@@ -40,12 +40,12 @@ const AboutSection = () => {
               <br/>
               <p>
                 I've previously interned as an iOS Software Engineer at {" "}
-                <a href="https://www.linkedin.com/company/queenly/" className="font-semibold text-def_yellow hover:text-hover_yellow">
+                <a href="https://www.linkedin.com/company/queenly/" className="custom-highlighted-text">
                   Queenly
                 </a>
                 , a marketplace startup for pageant and formalwear.
                 I've also interned at {" "}
-                <a href="https://www.linkedin.com/company/adobe/" className="font-semibold text-def_yellow hover:text-hover_yellow">
+                <a href="https://www.linkedin.com/company/adobe/" className="custom-highlighted-text">
                   Adobe
                 </a>
                 {" "} as a software engineer, 
@@ -54,7 +54,7 @@ const AboutSection = () => {
             </div>
             <div className='items-center justify-center flex flex-row space-x-10 md:space-x-20'>
               <div>
-                Contact me at {" "}
+                Contact: {" "}
                 <span className="underline italics">
                   53claire@gmail.com
                 </span>
@@ -62,10 +62,9 @@ const AboutSection = () => {
              
               <Link
                 href="/projects"
-                className="font-regular text-black italic hover:-translate-y-1 hover:text-yellow-600"
+                className="underline italic font-semibold hover:-translate-y-1 hover:custom-highlighted-text"
                 >
                   Resume
-                <hr className="w-12 h-0.5 mx-auto bg-def_yellow border-0"></hr>
               </Link>
             </div>
             

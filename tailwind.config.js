@@ -26,11 +26,15 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        def_yellow: "#eab308",  // default
-        hover_yellow: "#ca8a04",  // hover
+        def_yellow: "#eab308",  // default yellow
         sec_yellow: '#FEF08A',  // secondary yellow
-        gray: "#e2e8f0",    // background lighter gray
-        med_gray: "#cbd5e1",  // background (border) medium gray
+        hover_yellow: "#ca8a04",  // hover yellow
+        gray: "#e2e8f0",    // navbar lighter gray
+        med_gray: "#cbd5e1",  // navbar (border) medium gray
+        dark_gray: "#5d6675", // text dark gray
+      },
+      fontFamily: {
+        tommy: ['var(--font-tommy)'],
       },
     },
   },
@@ -106,6 +110,17 @@ module.exports = {
           marginTop: '0.5rem',
           backgroundColor: config('theme.colors.sec_yellow'),
           borderRadius: '0.5rem',
+        },
+        '.custom-highlighted-text': { // font-semibold text-def_yellow hover:text-hover_yellow
+          fontWeight: '600',
+          backgroundColor: config('theme.colors.sec_yellow'),
+          paddingLeft: '0.25rem',
+          paddingRight: '0.25rem',
+          '&:hover': {
+            color: config('theme.colors.hover_yellow'), // Matches hover:text-yellow-600
+          }, // old resume: font-regular text-black italic hover:-translate-y-1 hover:text-yellow-600
+          //                 <hr className="w-12 h-0.5 mx-auto bg-def_yellow border-0"></hr>
+
         }
 
       })
