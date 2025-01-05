@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import { HiArrowDown } from "react-icons/hi"
 import { Link as JumpAnchor} from "react-scroll/modules"
+import ExportedImage from "next-image-export-optimizer";
+import headshotImage from "../webs_images/headshot_rect_small.jpg";
 
 
 const AboutSection = () => {
@@ -13,7 +15,7 @@ const AboutSection = () => {
         </h1>
         <div className="custom-flex-center">
           <div className="md:w-2/5">
-            <img className="" src="./images/headshot_rect_small.jpg" alt="" width={400} height={400}/>
+            <ExportedImage className="" src={headshotImage} alt="" width={400} height={400}/>
           </div>
           <div className="md:w-1/2 md:mt-2">
             <h1 className="font-bold text-3xl mt-6 lg:mt-0">Hi, I'm Claire!</h1>
