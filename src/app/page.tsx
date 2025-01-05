@@ -8,6 +8,7 @@ export default function About() {
   return (
     <main className='py-0 mt-0'>
     <AboutSection/>
+    <br/>
     <FeaturedSection/>
     </main>
   );

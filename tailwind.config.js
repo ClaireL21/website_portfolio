@@ -77,6 +77,15 @@ module.exports = {
     },
     function ({ addUtilities, config }) {
       addUtilities({
+        '.custom-subheading': { // ml-24 text-left font-bold text-2xl
+          maxWidth: '80rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
+          marginLeft: 'auto', // mx-auto
+          marginRight: 'auto',
+          paddingLeft: '1rem', // p-4
+          textAlign: 'left',
+          fontWeight: '700',
+          fontSize: '1.5rem',
+        },
         '.custom-flex-center-span-height': {  //  'min-h-screen flex items-center justify-center'
             'min_height': 'calc(100%)'
         },
@@ -85,11 +94,15 @@ module.exports = {
           marginLeft: 'auto', // mx-auto
           marginRight: 'auto',
           padding: '1rem', // p-4
+          display: 'flex',  // flex column when not in grid layout
+          flexDirection: 'column',
+          gap: '3rem', // Gap between the items when in column layout
           '@screen md': {
             display: 'grid',
             gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-            gap: '2rem', // md:space-x-8 equivalent
+            gap: '3rem', // md:space-x-8 equivalent
           },
+          
         },
         '.custom-text-clickable-proj-heading': { // text-xl underline hover:text-yellow-600 font-bold 
           fontSize: '1.25rem',

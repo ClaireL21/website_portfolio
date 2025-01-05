@@ -68,7 +68,7 @@ const AboutSection = () => {
               </Link>
             </div>
             
-            <div className="flex flex-row justify-center mt-6">
+            <div className="flex flex-row justify-center mt-14">
                 <JumpAnchor
                     to="featured"
                     activeClass="active"

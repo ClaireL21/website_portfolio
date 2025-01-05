@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ProjectSection from "../../components/ProjectSection"
 export const metadata = {
   title: "Projects | Claire Lu"

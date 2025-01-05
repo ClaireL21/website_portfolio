@@ -30,7 +30,7 @@ const Footer = () => {
                         />
                     </a>
                 </div>
-                <div className='text-dark_gray'>
+                <div className='text-dark_gray text-sm'>
                     <div className='items-center justify-center'>
                         Contact: {" "}
                         <span className="underline italics">
@@ -43,7 +43,7 @@ const Footer = () => {
                     >
                     Resume
                     </Link>
-                    <div className="text-sm mt-4">
+                    <div className="mt-4">
                         © 2024 Claire Lu
                     </div>
                 </div>
