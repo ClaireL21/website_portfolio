@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-//import Image from 'next/image'
 import { HiArrowDown } from "react-icons/hi"
 import { Link as JumpAnchor} from "react-scroll/modules"
 import ExportedImage from "next-image-export-optimizer";
@@ -14,7 +13,7 @@ const FeaturedSection = () => {
         <h1 className="text-center font-bold text-3xl">
             Featured
         </h1>
-        <div className="flex flex-col text-center items-center justify-center mt-10 px-10 lg:px-40 md:flex-row md:space-x-8 md:text-left">
+        <div className="custom-flex-center md:flex-row">
           <div className="md:w-2/5">
             <ExportedImage className="" src={headshotImage} alt="" width={400} height={400}/>
           </div>

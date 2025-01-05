@@ -13,7 +13,7 @@ const AboutSection = () => {
         <h1 className="text-center font-bold text-3xl">
             About
         </h1>
-        <div className="custom-flex-center">
+        <div className="custom-flex-center md:flex-row">
           <div className="md:w-2/5">
             <ExportedImage className="" src={headshotImage} alt="" width={400} height={400}/>
           </div>
