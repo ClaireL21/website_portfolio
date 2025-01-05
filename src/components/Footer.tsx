@@ -23,7 +23,7 @@ const Footer = () => {
                             size={30}
                         />
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=100070013525903" rel="noreferrer" target="_blank">
+                    <a href="https://www.instagram.com/doodlzithink_/" rel="noreferrer" target="_blank">
                         <AiOutlineInstagram
                             className="hover:-translate-y-1 transition-transform cursor-pointer text-dark_gray hover:text-yellow-600" 
                             size={30}

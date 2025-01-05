@@ -14,12 +14,12 @@ const AboutSection = () => {
             About
         </h1>
         <div className="custom-flex-center md:flex-row">
-          <div className="md:w-2/5">
-            <ExportedImage className="" src={headshotImage} alt="" width={400} height={400}/>
+          <div className="md:w-2/5 flex justify-end items-center">
+            <ExportedImage className="max-w-sm p-6" src={headshotImage} alt=""/>
           </div>
-          <div className="md:w-1/2 md:mt-2">
-            <h1 className="font-bold text-2xl mt-6 lg:mt-0">Hi, I'm Claire!</h1>
-            <div className='mt-4 mb-6 mb-6 text-base'>
+          <div className="md:w-3/5">
+            <h1 className="font-bold text-2xl">Hi, I'm Claire!</h1>
+            <div className='mt-4 mb-6'>
               <p>
                 I'm a senior studying{" "}
                 <a href="http://cg.cis.upenn.edu/dmd.html" className="custom-highlighted-text">

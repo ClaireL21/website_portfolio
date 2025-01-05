@@ -47,7 +47,7 @@ module.exports = {
           textAlign: 'center',
           alignItems: 'center',
           justifyContent: 'center',
-          marginTop: '2.5rem', // mt-10 equivalent
+          marginTop: '1.5rem', // mt-10 equivalent
           paddingLeft: '2.5rem', // px-10 equivalent
           paddingRight: '2.5rem', // px-10 equivalent
           '@screen lg': {
@@ -70,9 +70,8 @@ module.exports = {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'bottom',
-          '> :not([hidden]) ~ :not([hidden])': {
-            marginLeft: '1rem',
-          }
+          flexWrap: 'wrap', /* Allow items to wrap to the next row */
+          gap: '0.5rem 1rem',
         }
       });
     },
