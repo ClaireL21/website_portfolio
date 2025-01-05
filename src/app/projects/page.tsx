@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import ProjectSection from "../../components/ProjectSection"
 export const metadata = {
   title: "Projects | Claire Lu"
 }
@@ -7,17 +7,7 @@ export const metadata = {
 export default function ProjectsPage() {
     return (
         <main>
-        <ProjectsSection/>
+        <ProjectSection/>
         </main>
       );
-}
-
-const ProjectsSection = () => {
-    return (
-        <section id="projects">
-            <h1 className="text-center font-bold text-3xl">
-                Projects
-            </h1>
-        </section>
-    )
 }

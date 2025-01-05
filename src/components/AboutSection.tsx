@@ -1,7 +1,5 @@
 'use client'
 import Link from 'next/link'
-//import Image from 'next/image'
-//import headshot from "/headshot_rect_small.jpg"
 import { HiArrowDown } from "react-icons/hi"
 import { Link as JumpAnchor} from "react-scroll/modules"
 
@@ -13,9 +11,9 @@ const AboutSection = () => {
         <h1 className="text-center font-bold text-3xl">
             About
         </h1>
-        <div className="flex flex-col text-center items-center justify-center mt-10 px-10 lg:px-40 md:flex-row md:space-x-8 md:text-left">
+        <div className="custom-flex-center">
           <div className="md:w-2/5">
-            <img className="" src="./headshot_rect_small.jpg" alt="" width={400} height={400}/>
+            <img className="" src="./images/headshot_rect_small.jpg" alt="" width={400} height={400}/>
           </div>
           <div className="md:w-1/2 md:mt-2">
             <h1 className="font-bold text-3xl mt-6 lg:mt-0">Hi, I'm Claire!</h1>
