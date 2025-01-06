@@ -9,18 +9,18 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-    {   label: "About",
-        page: "/about",
-    },
     {   label: "Projects",
-        page: "/projects",
+        page: "/",
     },
     {   label: "Art",
         page: "/art",
     },
     {   label: "For Fun",
         page: "/forfun",
-    }
+    },
+    {   label: "About",
+    page: "/about",
+    },
 ]
 const handleClick = (NAV_ITEMS)
 const Navbar = () => {

@@ -1,15 +1,12 @@
-import AboutSection from "../components/AboutSection"
-import FeaturedSection from "../components/FeaturedSection"
-
+import ProjectSection from "../components/ProjectSection"
 export const metadata = {
-  title: "About | Claire Lu"
+  title: "Projects | Claire Lu"
 }
-export default function About() {
-  return (
-    <main className='py-0 mt-0'>
-    <AboutSection/>
-    <br/>
-    <FeaturedSection/>
-    </main>
-  );
+
+export default function ProjectsPage() {
+    return (
+        <main>
+        <ProjectSection/>
+        </main>
+      );
 }
