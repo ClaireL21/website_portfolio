@@ -82,7 +82,15 @@ module.exports = {
             columnGap: '2.5rem', // Equivalent to space-x-10
             rowGap: '0', // Removes space-y-0 at md breakpoint
           },
-        }
+        },
+        '.custom-video-container': { // for videos, to be put in iframe className // relative inset-0 w-full h-full px-4
+          position: 'relative', // for "relative"
+          inset: '0', // for "inset-0"
+          width: '100%', // for "w-full"
+          height: '100%', // for "h-full"
+          paddingLeft: '1rem', // for "px-4" (left padding)
+          paddingRight: '1rem', // for "px-4" (right padding)
+        },
       });
     },
     function ({ addUtilities, config }) {

@@ -242,7 +242,7 @@ const HRDressSection = () => {
                 </div>
                 <div className="md:w-1/3"> 
                     <div className="md:h-[600px] md:w-[400px] h-[600px] w-[400px]">
-                        <iframe className="relative inset-0 w-full h-full px-4" src="https://www.youtube.com/embed/J1HFLx0STAg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        <iframe className="custom-video-container" src="https://www.youtube.com/embed/J1HFLx0STAg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                     </div>
                 </div>
             </div>

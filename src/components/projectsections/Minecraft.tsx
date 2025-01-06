@@ -30,7 +30,7 @@ const MinecraftSection = () => {
             </h1>
             <div className="md:w-4/5 custom-body align-center items-center justify-center text-center">                
                 <div className="md:h-[600px] h-[300px]">
-                    <iframe className="relative inset-0 w-full h-full px-4" src="https://www.youtube.com/embed/XnAmGhJppd0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe className="custom-video-container" src="https://www.youtube.com/embed/XnAmGhJppd0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
             </div>
             <div className='custom-body-2'>
