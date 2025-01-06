@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface NavItem {
     label: string
@@ -22,10 +23,12 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "/about",
     },
 ]
-const handleClick = (NAV_ITEMS)
+//const handleClick = (NAV_ITEMS)
+
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
-    const [clickedIndex, setClickedIndex] = useState(0)
+    //const [clickedIndex, setClickedIndex] = useState(0)
+    const pathname = usePathname()
 
     return (
         <header className={`w-full mx-auto px-10 fixed top-0 z-50 bg-gray border-b border-med_gray`}>
@@ -53,16 +56,16 @@ const Navbar = () => {
                     >
                         <div className="items-center justify-center space-y-8 md:flex md:space-x-10 md:space-y-0">
                             {NAV_ITEMS.map((item, idx) => {
+                                const isActive = pathname === item.page
                                 return (
                                     <Link
                                         key={idx}
                                         href={item.page}
-                                        className={
-                                            `block lg:inline-block hover:text-yellow-600 ${clickedIndex == idx ? "font-bold" : "font-regular"}`
+                                        className={`block lg:inline-block hover:text-yellow-600 
+                                        ${isActive ? "font-bold" : "font-regular"}`
                                         }
                                         onClick={() => {
                                             setNavbar(!navbar); 
-                                            setClickedIndex(idx);
                                         }}
                                         >{item.label}
                                     </Link>
@@ -75,5 +78,9 @@ const Navbar = () => {
         </header>
     )
 }
+
+// className={
+//     `block lg:inline-block hover:text-yellow-600 ${clickedIndex == idx ? "font-bold" : "font-regular"}`
+// }
 
 export default Navbar

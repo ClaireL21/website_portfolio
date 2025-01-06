@@ -6,6 +6,7 @@ export const metadata = {
 export default function ProjectsPage() {
     return (
         <main>
+          Dummy projects page
         </main>
       );
 }
