@@ -95,7 +95,7 @@ module.exports = {
           paddingRight: '1rem',
           textAlign: 'left',
         },
-        '.custom-body-2': { // ml-24 text-left font-bold text-2xl
+        '.custom-body-2': { // for project breakdowns // ml-24 text-left font-bold text-2xl
           maxWidth: '70rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
           marginLeft: 'auto', // mx-auto
           marginRight: 'auto',

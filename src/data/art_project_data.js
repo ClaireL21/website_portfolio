@@ -9,7 +9,7 @@ const art_projects = [
             "An environment.", 
         image: thumb_dr,
         github: "",
-        link: "/projects/dinerArt",
+        link: "/projects/diner",
         tags: [
             { skill: "Maya"},
             { skill: "Photoshop"},
@@ -21,7 +21,7 @@ const art_projects = [
             "A character model of Gertrude, from Skottie Young's I Hate Fairyland",
         image: thumb_gr,
         github:"",
-        link: "/projects/gertrudeArt",
+        link: "/projects/gertrude",
         tags: [
             { skill: "Maya"},
         ]
@@ -32,7 +32,7 @@ const art_projects = [
             "A character model based on the 2D art of Noodle from the Gorillaz band.", 
         image: thumb_nd,
         github: "",
-        link: "/projects/noodleArt",
+        link: "/projects/noodle",
         tags: [
             { skill: "Maya"},
             { skill: "ZBrush"},

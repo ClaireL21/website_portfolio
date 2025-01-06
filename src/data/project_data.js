@@ -32,7 +32,7 @@ const projects = [
             "and integrated dress renders into the Queenly iOS app.",
         image: thumb_hrd,
         github: "",
-        link: "/projects/highResDress",
+        link: "/projects/hrdress",
         tags: [
             { skill: "Swift"},
             { skill: "Objective-C"},
@@ -47,7 +47,7 @@ const projects = [
             ". Supports smoothing via Catmull-Clark subdivision.",
         image: thumb_mm,
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/microMaya",
+        link: "/projects/micromaya",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},
@@ -61,7 +61,7 @@ const projects = [
             " feature for the iOS app.",
         image: thumb_follow,
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/followProject",
+        link: "/projects/follow",
         tags: [
             { skill: "Swift"},
             { skill: "Objective-C"},
@@ -74,7 +74,7 @@ const projects = [
             "A spooky 2D platform game, created in a 24-hr Game Jam.",
         image: thumb_fl,
         github: "",
-        link: "/projects/flickerProject",
+        link: "/projects/flicker",
         tags: [
             { skill: "Unity"},
             { skill: "C#"},
@@ -88,7 +88,7 @@ const projects = [
             "A procedurally generated flame character, made in CIS 5660.",
         image: thumb_pf,
         github: "",
-        link: "/projects/procedFlame",
+        link: "/projects/flame",
         tags: [
             { skill: "Typescript"},
             { skill: "GLSL"},
@@ -100,7 +100,7 @@ const projects = [
             "A web-scraping food app that locates recipes based on user-entered filters",
         image: thumb_fff,
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/funFood",
+        link: "/projects/funfoodfinder",
         tags: [
             { skill: "Java"},
             { skill: "Web scraping"},
@@ -113,7 +113,7 @@ const projects = [
             "A collection of surface and post-processing shaders applied on a 3D mesh of Mario.",
         image: thumb_sf,
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/shaderFun",
+        link: "/projects/shaderfun",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},
@@ -126,7 +126,7 @@ const projects = [
             "Pinboard is a social app for high school communities where students can post information about school events & clubs",
         image: thumb_pb,
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/pinboardProject",
+        link: "/projects/pinboard",
         tags: [
             { skill: "Swift"},
             { skill: "Xcode"},
