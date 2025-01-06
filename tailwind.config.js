@@ -72,12 +72,22 @@ module.exports = {
           alignItems: 'bottom',
           flexWrap: 'wrap', /* Allow items to wrap to the next row */
           gap: '0.5rem 1rem',
+        },
+        '.custom-twocol-body': { // flex flex-col space-y-2 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:flex-row md:text-left
+          display: 'flex',
+          flexDirection: 'column',
+          rowGap: '0.5rem', // Equivalent to space-y-2
+          '@screen md': {
+            flexDirection: 'row',
+            columnGap: '2.5rem', // Equivalent to space-x-10
+            rowGap: '0', // Removes space-y-0 at md breakpoint
+          },
         }
       });
     },
     function ({ addUtilities, config }) {
       addUtilities({
-        '.custom-subheading': { // ml-24 text-left font-bold text-2xl
+        '.custom-subheading': { // grid subheadings // ml-24 text-left font-bold text-2xl
           maxWidth: '80rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
           marginLeft: 'auto', // mx-auto
           marginRight: 'auto',
@@ -103,6 +113,17 @@ module.exports = {
           paddingLeft: '1rem', // p-4
           paddingRight: '1rem',
           textAlign: 'left',
+        },
+        '.custom-subheading-2': { // for project breakdown subheadings // mt-8 text-left font-bold text-2xl
+          marginTop: '2rem',
+          textAlign: 'left',
+          fontWeight: '700',
+          fontSize: '1.5rem',
+        },
+        '.custom-center': { // for project breakdown centering content within container // flex items-stretch justify-center
+          display: 'flex',
+          alignItems: 'stretch',
+          justifyContent: 'center',
         },
         '.custom-flex-center-span-height': {  //  'min-h-screen flex items-center justify-center'
             'min_height': 'calc(100%)'
@@ -132,7 +153,7 @@ module.exports = {
         },
         '.custom-flex-tags-styling': { // bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold
           fontSize: '0.9rem',
-          fontWeight: '500',
+          fontWeight: '600',
           paddingLeft: '1rem',
           paddingRight: '1rem',
           paddingTop: '0.25rem',

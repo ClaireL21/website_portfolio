@@ -11,7 +11,7 @@ const featured_projects = [
             "noise based procedural generation, and more.", 
         image: thumb_mc,
         github: "",
-        link: "/projects/miniMinecraft",
+        link: "/projects/minecraft",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},
@@ -25,7 +25,7 @@ const featured_projects = [
             "and integrated dress renders into the Queenly iOS app.",
         image: thumb_hrd,
         github: "",
-        link: "/projects/highResDress",
+        link: "/projects/hrdress",
         tags: [
             { skill: "Swift"},
             { skill: "Objective-C"},
@@ -40,7 +40,7 @@ const featured_projects = [
             ". Supports smoothing via Catmull-Clark subdivision.",
         image: thumb_mm,
         github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
-        link: "/projects/microMaya",
+        link: "/projects/micromaya",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},

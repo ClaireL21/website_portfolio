@@ -41,11 +41,11 @@ const MinecraftSection = () => {
                     minecraft environment.
                 </div>
 
-                <div className="mt-2 flex flex-row align-bottom space-x-4">
+                <div className="custom-flex-tags-component">
                     {tags.map((item, idx) => {
                         return (
                             <p key={idx}
-                                className="bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold"
+                                className="custom-flex-tags-styling"
                                 >
                                 {item.skill}
                             </p>
@@ -53,12 +53,12 @@ const MinecraftSection = () => {
                     })}
                 </div>
 
-                <h1 className="mt-8 text-left font-bold text-2xl">
+                <h1 className="custom-subheading-2">
                     Player Physics
                 </h1>
             
-                <div className="flex flex-col space-y-2 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:flex-row md:text-left">
-                    <div className="md:w-3/5 text:left">
+                <div className="custom-twocol-body">
+                    <div className="md:w-3/5">
                         <div>
                             For the player physics, I implemented player movement, including flight mode and ground mode, 
                             as well as building and breaking blocks. 
@@ -73,7 +73,7 @@ const MinecraftSection = () => {
                             return the block before the intersection (i.e. the adjacent block).
                         </div>
                     </div>
-                    <div className="md:w-2/5 text-right item-center justify-center mt-8">
+                    <div className="md:w-2/5">
                         <ExportedImage 
                             className=""
                             src={playerphysics}
@@ -84,11 +84,11 @@ const MinecraftSection = () => {
                     </div>
                 </div>
 
-                <h1 className="mt-6 text-left font-bold text-2xl">
+                <h1 className="custom-subheading-2">
                     Multithreading
                 </h1>
 
-                <div className="mt-2">
+                <div className="">
                     Because multithreading performs threads of execution in parallel,
                     it allows for the chunks of terrain in minecraft to be loaded in 
                     quickly. This step was very important in making sure our minecraft 
@@ -176,7 +176,7 @@ const MinecraftSection = () => {
                     </div>
                 </div>
 
-                <h1 className="mt-6 text-left font-bold text-2xl">
+                <h1 className="custom-subheading-2">
                     Additional Biomes
                 </h1>
 
