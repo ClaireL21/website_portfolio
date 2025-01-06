@@ -23,11 +23,9 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "/about",
     },
 ]
-//const handleClick = (NAV_ITEMS)
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
-    //const [clickedIndex, setClickedIndex] = useState(0)
     const pathname = usePathname()
 
     return (
@@ -78,9 +76,5 @@ const Navbar = () => {
         </header>
     )
 }
-
-// className={
-//     `block lg:inline-block hover:text-yellow-600 ${clickedIndex == idx ? "font-bold" : "font-regular"}`
-// }
 
 export default Navbar

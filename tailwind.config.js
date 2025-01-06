@@ -86,6 +86,24 @@ module.exports = {
           fontWeight: '700',
           fontSize: '1.5rem',
         },
+        '.custom-body': { // ml-24 text-left font-bold text-2xl
+          maxWidth: '80rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
+          marginLeft: 'auto', // mx-auto
+          marginRight: 'auto',
+          marginTop: '3.5rem',
+          paddingLeft: '1rem', // p-4
+          paddingRight: '1rem',
+          textAlign: 'left',
+        },
+        '.custom-body-2': { // ml-24 text-left font-bold text-2xl
+          maxWidth: '70rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
+          marginLeft: 'auto', // mx-auto
+          marginRight: 'auto',
+          marginTop: '0.5rem',
+          paddingLeft: '1rem', // p-4
+          paddingRight: '1rem',
+          textAlign: 'left',
+        },
         '.custom-flex-center-span-height': {  //  'min-h-screen flex items-center justify-center'
             'min_height': 'calc(100%)'
         },

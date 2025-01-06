@@ -18,7 +18,7 @@ const projects = [
             "noise based procedural generation, and more.", 
         image: thumb_mc,
         github: "",
-        link: "/projects/miniMinecraft",
+        link: "/projects/minecraft",
         tags: [
             { skill: "C++"},
             { skill: "GLSL"},

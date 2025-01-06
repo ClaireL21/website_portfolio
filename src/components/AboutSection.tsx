@@ -61,7 +61,7 @@ const AboutSection = () => {
               </div>
              
               <Link
-                href="/projects"
+                href="/"
                 className="underline italic font-semibold hover:-translate-y-1 hover:custom-highlighted-text"
                 >
                   Resume

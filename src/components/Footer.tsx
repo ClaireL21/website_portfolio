@@ -38,7 +38,7 @@ const Footer = () => {
                         </span>
                     </div>
                     <Link
-                    href="/projects"
+                    href="/"
                     className="font-regular italic underline hover:text-hover_yellow"
                     >
                     Resume
