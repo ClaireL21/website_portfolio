@@ -154,6 +154,7 @@ module.exports = {
           maxWidth: '80rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
           marginLeft: 'auto', // mx-auto
           marginRight: 'auto',
+          width: '100%',
           padding: '1rem', // p-4
           display: 'flex',  // flex column when not in grid layout
           flexDirection: 'column',
@@ -161,6 +162,21 @@ module.exports = {
           '@screen md': {
             display: 'grid',
             gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+            gap: '1rem', // md:space-x-8 equivalent
+          },
+        },
+        '.custom-art-grid-2': { // md:grid md:grid-cols-3 md:gap-8 max-w-7xl mx-auto p-4
+          maxWidth: '80rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
+          marginLeft: 'auto', // mx-auto
+          marginRight: 'auto',
+          width: '100%',
+          padding: '1rem', // p-4
+          display: 'flex',  // flex column when not in grid layout
+          flexDirection: 'column',
+          gap: '2rem', // Gap between the items when in column layout
+          '@screen md': {
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
             gap: '1rem', // md:space-x-8 equivalent
           },
         },
