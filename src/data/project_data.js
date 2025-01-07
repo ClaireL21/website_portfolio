@@ -7,7 +7,7 @@ import thumb_pf from "../webs_images/thumbnails/thumb_pf.jpg";
 import thumb_fff from "../webs_images/thumbnails/thumb_fff.jpg";
 import thumb_sf from "../webs_images/thumbnails/thumb_sf.jpg";
 import thumb_pb from "../webs_images/thumbnails/thumb_pb.jpg";
-
+import thumb_rb from "../webs_images/thumbnails/thumb_rb.jpg";
 
 const projects = [
     {
@@ -37,6 +37,21 @@ const projects = [
             { skill: "Swift"},
             { skill: "Objective-C"},
             { skill: "Xcode"},
+        ]
+    },
+    {
+        name: "Stylized Shader Robot Scene",
+        description: 
+            "Stylized toon shader with half tone shading, " +
+            "post processing effects, and interactivity.",
+        image: thumb_rb,
+        github: "",
+        link: "/projects/robot",
+        tags: [
+            { skill: "Unity"},
+            { skill: "Shader Graph"},
+            { skill: "VFX"},
+            { skill: "Real-time Rendering"},
         ]
     },
     {
