@@ -149,7 +149,20 @@ module.exports = {
             gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
             gap: '3rem', // md:space-x-8 equivalent
           },
-          
+        },
+        '.custom-art-grid': { // md:grid md:grid-cols-3 md:gap-8 max-w-7xl mx-auto p-4
+          maxWidth: '80rem', // max-w-7xl (7xl is 80rem in Tailwind's default theme)
+          marginLeft: 'auto', // mx-auto
+          marginRight: 'auto',
+          padding: '1rem', // p-4
+          display: 'flex',  // flex column when not in grid layout
+          flexDirection: 'column',
+          gap: '2rem', // Gap between the items when in column layout
+          '@screen md': {
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+            gap: '1rem', // md:space-x-8 equivalent
+          },
         },
         '.custom-text-clickable-proj-heading': { // text-xl underline hover:text-yellow-600 font-bold 
           fontSize: '1.25rem',
