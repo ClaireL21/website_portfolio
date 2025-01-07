@@ -18,7 +18,7 @@ const FlickerSection = () => {
     <div>
         <section id="flicker">
             <h1 className="text-center font-bold text-3xl">
-                Flicker 2D Platform Game
+                Flicker: 2D Platform Game
             </h1>
             <div className='custom-body-2'>
             <div className="text-center flex item-center justify-center mt-8">

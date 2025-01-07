@@ -8,6 +8,7 @@ import thumb_fff from "../webs_images/thumbnails/thumb_fff.jpg";
 import thumb_sf from "../webs_images/thumbnails/thumb_sf.jpg";
 import thumb_pb from "../webs_images/thumbnails/thumb_pb.jpg";
 import thumb_rb from "../webs_images/thumbnails/thumb_rb.jpg";
+import thumb_st from "../webs_images/thumbnails/thumb_town.jpg";
 
 const projects = [
     {
@@ -40,6 +41,21 @@ const projects = [
         ]
     },
     {
+        name: "Procedural Carousels",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Houdini"},
+            { skill: "Unreal Engine"},
+            { skill: "Tools for Artists"},
+            { skill: "Substance Painter / Designer"},
+        ]
+    },
+    {
         name: "Stylized Shader Robot Scene",
         description: 
             "Stylized toon shader with half tone shading, " +
@@ -55,13 +71,121 @@ const projects = [
         ]
     },
     {
+        name: "Byakugan: VR 360 Hack n Slash",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+            { skill: "VR"},
+            { skill: "Meta Quest 3"},
+        ]
+    },
+    {
+        name: "Stylized Town Scene",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unity"},
+            { skill: "Shader Graph"},
+            { skill: "Houdini"},
+            { skill: "VFX"},
+            { skill: "Real-time Rendering"},
+        ]
+    },
+    {
+        name: "Monte Carlo Path Tracer",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+        ]
+    },
+    {
+        name: "PBR",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+        ]
+    },
+    {
+        name: "SDF Fun",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+        ]
+    },
+    {
+        name: "Flames of Fury: 2.5D Platform Game",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+        ]
+    },
+    {
+        name: "LEGO-ifier tool",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+        ]
+    },
+    {
+        name: "Procedural Ornament Tool",
+        description: 
+            "Stylized toon shader with half tone shading, " +
+            "post processing effects, and interactivity.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/robot",
+        tags: [
+            { skill: "Houdini"},
+        ]
+    },
+    {
         name: "Micro Maya",
         description: 
             "A mini version of the 3D modeling software Maya. " + 
             "Implements basic 3D mesh operations like deforming meshes, splitting faces, and skinning" + 
             ". Supports smoothing via Catmull-Clark subdivision.",
         image: thumb_mm,
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        github: "",
         link: "/projects/micromaya",
         tags: [
             { skill: "C++"},
@@ -70,12 +194,37 @@ const projects = [
         ]
     },
     {
+        name: "Procedural Jellyfish",
+        description: 
+            "Stylized watercolor shader with procedural models, " +
+            "surface deformation shaders, and post processing effects.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/town",
+        tags: [
+            { skill: "Unreal Engine"},
+            { skill: "Blueprints"},
+        ]
+    },
+    {
+        name: "Procedural House Tool",
+        description: 
+            "Stylized toon shader with half tone shading, " +
+            "post processing effects, and interactivity.",
+        image: thumb_st,
+        github: "",
+        link: "/projects/robot",
+        tags: [
+            { skill: "Houdini"},
+        ]
+    },
+    {
         name: "Follow/Following Project",
         description: 
             "A Queenly internship project involving implementing the Follow/Following" +
             " feature for the iOS app.",
         image: thumb_follow,
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        github: "",
         link: "/projects/follow",
         tags: [
             { skill: "Swift"},
@@ -84,7 +233,7 @@ const projects = [
         ]
     },
     {
-        name: "Flicker 2D Platform Game",
+        name: "Flicker: 2D Platform Game",
         description: 
             "A spooky 2D platform game, created in a 24-hr Game Jam.",
         image: thumb_fl,
@@ -102,7 +251,7 @@ const projects = [
         description: 
             "A procedurally generated flame character, made in CIS 5660.",
         image: thumb_pf,
-        github: "",
+        github: "https://github.com/ClaireL21/hw01-fireball",
         link: "/projects/flame",
         tags: [
             { skill: "Typescript"},
@@ -114,7 +263,7 @@ const projects = [
         description: 
             "A web-scraping food app that locates recipes based on user-entered filters",
         image: thumb_fff,
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        github: "",
         link: "/projects/funfoodfinder",
         tags: [
             { skill: "Java"},
@@ -127,7 +276,7 @@ const projects = [
         description: 
             "A collection of surface and post-processing shaders applied on a 3D mesh of Mario.",
         image: thumb_sf,
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        github: "",
         link: "/projects/shaderfun",
         tags: [
             { skill: "C++"},
@@ -140,7 +289,7 @@ const projects = [
         description: 
             "Pinboard is a social app for high school communities where students can post information about school events & clubs",
         image: thumb_pb,
-        github: "https://github.com/ClaireL21/tailwindcss-and-nextjs-portfolio/tree/starter",
+        github: "",
         link: "/projects/pinboard",
         tags: [
             { skill: "Swift"},

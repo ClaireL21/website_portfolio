@@ -3,6 +3,7 @@ import Link from 'next/link'
 import ExportedImage from "next-image-export-optimizer";
 import projects from '../data/project_data';
 import art_projects from '../data/art_project_data';
+import { BsGithub } from "react-icons/bs"
 
 const ProjectSection = () => {
     return (
@@ -43,6 +44,15 @@ const ProjectSection = () => {
                                                     </p>
                                                 )
                                             })}
+                                            {project.github !== "" &&
+                                            <Link href={project.github} target="_blank">
+                                                <BsGithub
+                                                    size={30}
+                                                    className="mt-2 hover:-translate-y-1 transition-transform cursor-pointer"
+                                                />
+                                            </Link>
+                                            }
+                                            
                                         </div>
                                     </div>
                                 </div>
