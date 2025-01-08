@@ -109,9 +109,9 @@ const ArtSection = () => {
                     <div className="relative">
                         <div className="max-w-7xl justify-center">
                             <div className="custom-twocol-body p-20 flex flex-col md:flex-col lg:flex-row">
-                                <div className={art[currentImageIndex].vertical ? "lg:w-3/5 lg:max-h-screen py-4" : "lg:w-4/5"}>
+                                <div className={art[currentImageIndex].vertical ? "lg:w-3/5 lg:max-h-screen w-full max-h-4/5 py-4" : "lg:w-4/5"}>
                                     <ExportedImage
-                                    className={art[currentImageIndex].vertical ? "h-full w-auto" : "w-full h-auto"}
+                                    className={art[currentImageIndex].vertical ? "lg:h-full lg:w-auto w-full h-auto" : "w-full h-auto"}
                                     src={art[currentImageIndex].hrimage}
                                     alt={art[currentImageIndex].name}
                                     />
