@@ -1,22 +1,65 @@
 'use client'
+import { useState } from 'react';
 import Link from 'next/link'
 import ExportedImage from "next-image-export-optimizer";
 import projects from '../data/project_data';
-import art_projects from '../data/art_project_data';
 import { BsGithub } from "react-icons/bs"
 
 const ProjectSection = () => {
+    const [filters, setFilters] = useState([
+        { name: "Programming", checked: false },
+        { name: "Tech Art", checked: false },
+        { name: "UX / UI", checked: false },
+        { name: "Games", checked: false },
+        { name: "3D Modeling", checked: false },
+    ]);
+    
+    // Toggle filter state
+    const toggleFilter = (index: number) => {
+        setFilters((prevFilters) =>
+            prevFilters.map((filter, idx) =>
+                idx === index ? { ...filter, checked: !filter.checked } : filter
+            )
+        );
+    };
+
+    // Get active filters
+    const activeFilters = filters
+        .filter((filter) => filter.checked)
+        .map((filter) => filter.name);
+
+    // Filter projects based on active filters
+    const filteredProjects = projects.filter(
+        (project) => activeFilters.length === 0 || activeFilters.includes(project.filter)
+    );
+    
+
     return (
         <section id="projects">
             <h1 className="text-center font-bold text-3xl">
                 Projects
             </h1>
-            <div className="custom-subheading">
-                Tech/Graphics
+            <div className='max-w-7xl text-left m-auto p-4 mt-4'>
+                <div className='custom-flex-filters-component'>
+                    <div className='font-bold underline text-xl'>
+                        Filters: 
+                    </div>
+                    {filters.map((filter, idx) => (
+                        <button
+                            key={idx}
+                            className={`custom-flex-filters-styling ${
+                                filter.checked ? "bg-black text-white" : "bg-gray text-black"
+                            }`}
+                            onClick={() => toggleFilter(idx)}
+                        >
+                            {filter.name}
+                        </button>
+                    ))}
+                </div>
             </div>
             <div className='custom-flex-center-span-height'>
                 <div className="custom-grid">
-                    {projects.map((project, idx) => {
+                    {filteredProjects.map((project, idx) => {
                         return (
                             <div key={idx}>
                                 <div className="flex flex-col animate-slideUpCubiBezier animation-delay-1">
@@ -53,47 +96,6 @@ const ProjectSection = () => {
                                             </Link>
                                             }
                                             
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        ) 
-                    })}
-                </div>
-            </div>
-            <div className="custom-subheading">
-                3D Art
-            </div>
-            <div className='custom-flex-center-span-height'>
-                <div className="custom-grid">
-                    {art_projects.map((project, idx) => {
-                        return (
-                            <div key={idx}>
-                                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-1 md:flex-col md:space-x-4">
-                                    <div className="">
-                                        <Link href={project.link} target="_blank">
-                                        <ExportedImage className="w-full h-52 object-cover rounded-sm" src={project.image} alt=""/>
-                                        </Link>
-                                    </div>
-                                    <div className="mt-4 text-left">
-                                        <h1 className="custom-text-clickable-proj-heading mb-2">
-                                            <Link href={project.link} target="_blank">
-                                                {project.name}
-                                            </Link>
-                                        </h1>
-                                        <p className="mb-2"> 
-                                            {project.description}
-                                        </p>
-                                        <div className="custom-flex-tags-component">
-                                            {project.tags.map((item, idx) => {
-                                                return (
-                                                    <p key={idx}
-                                                        className="custom-flex-tags-styling"
-                                                        >
-                                                        {item.skill}
-                                                    </p>
-                                                )
-                                            })}
                                         </div>
                                     </div>
                                 </div>

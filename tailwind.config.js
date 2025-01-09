@@ -73,6 +73,13 @@ module.exports = {
           flexWrap: 'wrap', /* Allow items to wrap to the next row */
           gap: '0.5rem 1rem',
         },
+        '.custom-flex-filters-component': { // flex flex-row align-bottom space-x-4
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          flexWrap: 'wrap', /* Allow items to wrap to the next row */
+          gap: '0.75rem 2rem',
+        },
         '.custom-twocol-body': { // flex flex-col space-y-2 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:flex-row md:text-left
           display: 'flex',
           flexDirection: 'column',
@@ -198,6 +205,17 @@ module.exports = {
           marginTop: '0.5rem',
           backgroundColor: config('theme.colors.sec_yellow'),
           borderRadius: '0.5rem',
+        },
+        '.custom-flex-filters-styling': { // bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold
+          fontSize: '1rem',
+          //fontWeight: '400',
+          paddingLeft: '1.5rem',
+          paddingRight: '1.5rem',
+          paddingTop: '0.5rem',
+          paddingBottom: '0.5rem',
+          marginTop: '0rem',
+          //backgroundColor: config('theme.colors.gray'),
+          borderRadius: '1.5rem',
         },
         '.custom-highlighted-text': { // font-semibold text-def_yellow hover:text-hover_yellow
           fontWeight: '600',

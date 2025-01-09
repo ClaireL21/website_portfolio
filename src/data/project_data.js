@@ -14,6 +14,9 @@ import thumb_fury from "../webs_images/thumbnails/thumb_fury.jpg";
 import thumb_bya from "../webs_images/thumbnails/thumb_bya.jpg";
 import thumb_carousel from "../webs_images/thumbnails/thumb_carousel.jpg";
 import thumb_ornament from "../webs_images/thumbnails/thumb_ornament.jpg";
+import thumb_dr from "../webs_images/thumbnails/thumb_dr.jpeg";
+import thumb_gr from "../webs_images/thumbnails/thumb_gr.jpeg";
+import thumb_nd from "../webs_images/thumbnails/thumb_nd.jpeg";
 
 const projects = [
     {
@@ -29,7 +32,8 @@ const projects = [
             { skill: "C++"},
             { skill: "GLSL"},
             { skill: "Qt"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "High Resolution 3D Models of Formal Dresses",
@@ -43,7 +47,8 @@ const projects = [
             { skill: "Swift"},
             { skill: "Objective-C"},
             { skill: "Xcode"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "Procedural Carousel Tool",
@@ -57,7 +62,8 @@ const projects = [
             { skill: "Unreal Engine"},
             { skill: "Tools for Artists"},
             { skill: "Substance Painter / Designer"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Stylized Shader Robot Scene",
@@ -70,7 +76,8 @@ const projects = [
         tags: [
             { skill: "Unity"},
             { skill: "Shader Graph"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Byakugan: VR 360 Hack n Slash",
@@ -83,7 +90,8 @@ const projects = [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
             { skill: "VR"},
-        ]
+        ],
+        filter: "Games",
     },
     {
         name: "Stylized Town Scene",
@@ -97,7 +105,8 @@ const projects = [
             { skill: "Unity"},
             { skill: "Shader Graph"},
             { skill: "Houdini"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Monte Carlo Path Tracer",
@@ -108,7 +117,8 @@ const projects = [
         link: "/projects/pathtracer",
         tags: [
             { skill: "todo"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "PBR",
@@ -119,7 +129,8 @@ const projects = [
         link: "/projects/pbr",
         tags: [
             { skill: "todo"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "SDF Fun",
@@ -131,7 +142,8 @@ const projects = [
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "Flames of Fury: 2.5D Platform Game",
@@ -143,7 +155,8 @@ const projects = [
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
-        ]
+        ],
+        filter: "Games",
     },
     {
         name: "Procedural LEGO-ifier Tool",
@@ -154,7 +167,8 @@ const projects = [
         link: "/projects/lego",
         tags: [
             { skill: "Houdini"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Procedural Ornament Tool",
@@ -167,7 +181,8 @@ const projects = [
         link: "/projects/ornament",
         tags: [
             { skill: "Houdini"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Micro Maya",
@@ -182,7 +197,8 @@ const projects = [
             { skill: "C++"},
             { skill: "GLSL"},
             { skill: "Qt"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "Procedural Jellyfish",
@@ -194,7 +210,8 @@ const projects = [
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Procedural House Tool",
@@ -205,7 +222,8 @@ const projects = [
         link: "/projects/house",
         tags: [
             { skill: "Houdini"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Follow/Following Project",
@@ -219,7 +237,8 @@ const projects = [
             { skill: "Swift"},
             { skill: "Objective-C"},
             { skill: "Xcode"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "Flicker: 2D Platform Game",
@@ -233,7 +252,8 @@ const projects = [
             { skill: "C#"},
             { skill: "Clip Studio Paint"},
             { skill: "Procreate"},
-        ]
+        ],
+        filter: "Games",
     },
     {
         name: "Procedural Flame Character",
@@ -245,7 +265,8 @@ const projects = [
         tags: [
             { skill: "Typescript"},
             { skill: "GLSL"},
-        ]
+        ],
+        filter: "Tech Art",
     },
     {
         name: "Fun Food Finder",
@@ -258,7 +279,8 @@ const projects = [
             { skill: "Java"},
             { skill: "Web scraping"},
             { skill: "Jsoup"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "Shader Fun",
@@ -271,7 +293,8 @@ const projects = [
             { skill: "C++"},
             { skill: "GLSL"},
             { skill: "Qt"},
-        ]
+        ],
+        filter: "Programming",
     },
     {
         name: "Pinboard iOS Mobile App",
@@ -283,7 +306,46 @@ const projects = [
         tags: [
             { skill: "Swift"},
             { skill: "Xcode"},
-        ]
+        ],
+        filter: "Programming",
+    },
+    {
+        name: "Underwater Retro Diner Environment",
+        description: 
+            "An underwater environment with a hidden octopus in the background!", 
+        image: thumb_dr,
+        github: "",
+        link: "/projects/diner",
+        tags: [
+            { skill: "Maya"},
+            { skill: "Photoshop"},
+        ],
+        filter: "3D Modeling"
+    },
+    {
+        name: "Gertrude",
+        description: 
+            "A character model of Gertrude, from Skottie Young's I Hate Fairyland",
+        image: thumb_gr,
+        github:"",
+        link: "/projects/gertrude",
+        tags: [
+            { skill: "Maya"},
+        ],
+        filter: "3D Modeling"
+    },
+    {
+        name: "Noodle",
+        description: 
+            "A character model based on the 2D art of Noodle from the Gorillaz band.", 
+        image: thumb_nd,
+        github: "",
+        link: "/projects/noodle",
+        tags: [
+            { skill: "Maya"},
+            { skill: "ZBrush"},
+        ],
+        filter: "3D Modeling"
     },
 ]
 
