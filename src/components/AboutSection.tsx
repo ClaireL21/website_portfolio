@@ -22,7 +22,7 @@ const AboutSection = () => {
             <div className='mt-4 mb-6'>
               <p>
                 I'm a senior studying{" "}
-                <a href="http://cg.cis.upenn.edu/dmd.html" className="custom-highlighted-text">
+                <a href="http://cg.cis.upenn.edu/dmd.html" target="_blank" className="custom-highlighted-text">
                     Digital Media Design (DMD)
                 </a>
                 , an interdisciplinary program between computer 
@@ -40,12 +40,12 @@ const AboutSection = () => {
               <br/>
               <p>
                 I've previously interned as an iOS Software Engineer at {" "}
-                <a href="https://www.linkedin.com/company/queenly/" className="custom-highlighted-text">
+                <a href="https://www.linkedin.com/company/queenly/" target="_blank" className="custom-highlighted-text">
                   Queenly
                 </a>
                 , a marketplace startup for pageant and formalwear.
                 I've also interned at {" "}
-                <a href="https://www.linkedin.com/company/adobe/" className="custom-highlighted-text">
+                <a href="https://www.linkedin.com/company/adobe/" target="_blank" className="custom-highlighted-text">
                   Adobe
                 </a>
                 {" "} as a software engineer, 

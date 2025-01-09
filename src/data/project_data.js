@@ -9,6 +9,9 @@ import thumb_sf from "../webs_images/thumbnails/thumb_sf.jpg";
 import thumb_pb from "../webs_images/thumbnails/thumb_pb.jpg";
 import thumb_rb from "../webs_images/thumbnails/thumb_rb.jpg";
 import thumb_st from "../webs_images/thumbnails/thumb_town.jpg";
+import thumb_house from "../webs_images/proj_images/town/house_hda.jpg";
+import thumb_fury from "../webs_images/thumbnails/thumb_fury.jpg";
+import thumb_bya from "../webs_images/thumbnails/thumb_bya.jpg";
 
 const projects = [
     {
@@ -66,23 +69,19 @@ const projects = [
         tags: [
             { skill: "Unity"},
             { skill: "Shader Graph"},
-            { skill: "VFX"},
-            { skill: "Real-time Rendering"},
         ]
     },
     {
         name: "Byakugan: VR 360 Hack n Slash",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
-        image: thumb_st,
-        github: "",
-        link: "/projects/town",
+            "VR Hack n Slash game developed in Unreal Engine with Meta Quest 3",
+        image: thumb_bya,
+        github: "https://github.com/ClaireL21/Byakugan-VR-Game",
+        link: "/projects/byakugan",
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
             { skill: "VR"},
-            { skill: "Meta Quest 3"},
         ]
     },
     {
@@ -91,14 +90,12 @@ const projects = [
             "Stylized watercolor shader with procedural models, " +
             "surface deformation shaders, and post processing effects.",
         image: thumb_st,
-        github: "",
+        github: "https://github.com/ClaireL21/stylized-medieval-town",
         link: "/projects/town",
         tags: [
             { skill: "Unity"},
             { skill: "Shader Graph"},
             { skill: "Houdini"},
-            { skill: "VFX"},
-            { skill: "Real-time Rendering"},
         ]
     },
     {
@@ -143,11 +140,10 @@ const projects = [
     {
         name: "Flames of Fury: 2.5D Platform Game",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
-        image: thumb_st,
+            "2.5D platform game created in Unreal Engine",
+        image: thumb_fury,
         github: "",
-        link: "/projects/town",
+        link: "/projects/fury",
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
@@ -209,11 +205,10 @@ const projects = [
     {
         name: "Procedural House Tool",
         description: 
-            "Stylized toon shader with half tone shading, " +
-            "post processing effects, and interactivity.",
-        image: thumb_st,
+            "Basic procedural house tool created for the Stylized Town Scene.",
+        image: thumb_house,
         github: "",
-        link: "/projects/robot",
+        link: "/projects/house",
         tags: [
             { skill: "Houdini"},
         ]

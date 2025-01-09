@@ -209,6 +209,13 @@ module.exports = {
           }, // old resume: font-regular text-black italic hover:-translate-y-1 hover:text-yellow-600
           //                 <hr className="w-12 h-0.5 mx-auto bg-def_yellow border-0"></hr>
 
+        },
+        '.custom-row-images': { // md:flex md:flex-row max-w-7xl
+          maxWidth: '80rem',
+          '@screen md': {
+            display: "flex",
+            flexDirection: "row",
+          },
         }
 
       })

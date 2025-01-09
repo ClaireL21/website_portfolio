@@ -42,7 +42,6 @@ const tags = [
     { skill: "Unity"},
     { skill: "Shader Graph"},
     { skill: "VFX"},
-    { skill: "Real-time Rendering"},
 ]
 
 const RobotSection = () => {
