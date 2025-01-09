@@ -5,7 +5,6 @@ import { Link as JumpAnchor} from "react-scroll/modules"
 import ExportedImage from "next-image-export-optimizer";
 import headshotImage from "../webs_images/headshot_rect_small.jpg";
 
-
 const AboutSection = () => {
   return (
     <div>

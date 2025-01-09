@@ -1,9 +1,10 @@
 'use client'
 import Link from 'next/link'
 import ExportedImage from "next-image-export-optimizer";
-import featured_projects from '../data/featured_data';
+import projects from '../data/project_data';
 
 const FeaturedSection = () => {
+    const featured_projects = projects.slice(0, 3);
   return (
     <div>
       <section id="featured">
@@ -15,7 +16,7 @@ const FeaturedSection = () => {
                     {featured_projects.map((project, idx) => {
                         return (
                             <div key={idx}>
-                                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-1 md:flex-col md:space-x-4">
+                                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-1">
                                     <div className="">
                                         <Link href={project.link} target="_blank">
                                         <ExportedImage className="w-full h-52 object-cover rounded-sm" src={project.image} alt=""/>
