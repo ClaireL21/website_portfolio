@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import BackToTopButton from '../components/BackToTopButton';
 
 const tommy = localFont({
   src: [
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <div className="mt-24">
           {children}
         </div>
+        <BackToTopButton/>
         <Footer/>
       </body>
     </html>
