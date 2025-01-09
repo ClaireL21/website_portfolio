@@ -26,6 +26,26 @@ const TemplateSection = () => {
                     Project description
 
                 </div>
+                <div>
+                    <ul className="px-8 list-disc">
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+                <div style={{ whiteSpace: "pre-line" }}>
+
+                </div>
 
                 <div className="custom-flex-tags-component">
                     {tags.map((item, idx) => {

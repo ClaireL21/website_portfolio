@@ -6,7 +6,7 @@ const art_projects = [
     {
         name: "Underwater Retro Diner Environment",
         description: 
-            "An environment.", 
+            "An underwater environment with a hidden octopus in the background!", 
         image: thumb_dr,
         github: "",
         link: "/projects/diner",

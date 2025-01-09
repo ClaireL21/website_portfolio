@@ -10,12 +10,12 @@ const tags = [
     { skill: "VR"},
 ]
 
-const ByakuganSection = () => {
+const PBRSection = () => {
   return (
     <div>
-        <section id="robot">
+        <section id="pbr">
             <h1 className="text-center font-bold text-3xl">
-                Byakugan: VR 360 Hack n Slash
+                PBR
             </h1>
             <div className="md:w-4/5 custom-body align-center items-center justify-center text-center">                
                 <div className="md:h-[600px] h-[300px]">
@@ -118,4 +118,4 @@ const ByakuganSection = () => {
     </div>
   )
 }
-export default ByakuganSection
+export default PBRSection

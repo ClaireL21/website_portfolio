@@ -1,8 +1,7 @@
 'use client'
 
-import ExportedImage from "next-image-export-optimizer"
-import process from "../../webs_images/proj_images/town/house_process.jpg";
 import Link from "next/link";
+import { BsGithub } from "react-icons/bs"
 
 const tags = [
     { skill: "Unreal Engine"},
@@ -82,6 +81,12 @@ const FurySection = () => {
                                     </p>
                                 )
                             })}
+                            <Link href={"https://github.com/ClaireL21/FlamesOfFuryGame"} target="_blank">
+                            <BsGithub
+                                size={30}
+                                className="mt-2 hover:-translate-y-1 transition-transform cursor-pointer"
+                            />
+                            </Link>
                         </div>
                     </div>
                 </div>

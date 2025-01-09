@@ -12,6 +12,8 @@ import thumb_st from "../webs_images/thumbnails/thumb_town.jpg";
 import thumb_house from "../webs_images/proj_images/town/house_hda.jpg";
 import thumb_fury from "../webs_images/thumbnails/thumb_fury.jpg";
 import thumb_bya from "../webs_images/thumbnails/thumb_bya.jpg";
+import thumb_carousel from "../webs_images/thumbnails/thumb_carousel.jpg";
+import thumb_ornament from "../webs_images/thumbnails/thumb_ornament.jpg";
 
 const projects = [
     {
@@ -44,13 +46,12 @@ const projects = [
         ]
     },
     {
-        name: "Procedural Carousels",
+        name: "Procedural Carousel Tool",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
-        image: thumb_st,
-        github: "",
-        link: "/projects/town",
+            "An artist friendly tool for generating procedural carousels",
+        image: thumb_carousel,
+        github: "https://github.com/ClaireL21/Procedural-Carousels",
+        link: "/projects/carousels",
         tags: [
             { skill: "Houdini"},
             { skill: "Unreal Engine"},
@@ -101,37 +102,32 @@ const projects = [
     {
         name: "Monte Carlo Path Tracer",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
+            "Cornell box path tracer",
         image: thumb_st,
         github: "",
-        link: "/projects/town",
+        link: "/projects/pathtracer",
         tags: [
-            { skill: "Unreal Engine"},
-            { skill: "Blueprints"},
+            { skill: "todo"},
         ]
     },
     {
         name: "PBR",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
+            "todo",
         image: thumb_st,
         github: "",
-        link: "/projects/town",
+        link: "/projects/pbr",
         tags: [
-            { skill: "Unreal Engine"},
-            { skill: "Blueprints"},
+            { skill: "todo"},
         ]
     },
     {
         name: "SDF Fun",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
+            "todo",
         image: thumb_st,
         github: "",
-        link: "/projects/town",
+        link: "/projects/sdf",
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
@@ -142,7 +138,7 @@ const projects = [
         description: 
             "2.5D platform game created in Unreal Engine",
         image: thumb_fury,
-        github: "",
+        github: "https://github.com/ClaireL21/FlamesOfFuryGame",
         link: "/projects/fury",
         tags: [
             { skill: "Unreal Engine"},
@@ -150,26 +146,25 @@ const projects = [
         ]
     },
     {
-        name: "LEGO-ifier tool",
+        name: "Procedural LEGO-ifier Tool",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
+            "A tool that takes any input mesh and outputs the same mesh composed of various lego blocks",
         image: thumb_st,
         github: "",
-        link: "/projects/town",
+        link: "/projects/lego",
         tags: [
-            { skill: "Unreal Engine"},
-            { skill: "Blueprints"},
+            { skill: "Houdini"},
         ]
     },
     {
         name: "Procedural Ornament Tool",
         description: 
-            "Stylized toon shader with half tone shading, " +
-            "post processing effects, and interactivity.",
-        image: thumb_st,
+            "An ornament tool created for the Procedural Carousels. " +
+            "Generates a variety of distinct looking ornaments that can decorate the sides of a mesh. "
+            ,
+        image: thumb_ornament,
         github: "",
-        link: "/projects/robot",
+        link: "/projects/ornament",
         tags: [
             { skill: "Houdini"},
         ]
@@ -192,11 +187,10 @@ const projects = [
     {
         name: "Procedural Jellyfish",
         description: 
-            "Stylized watercolor shader with procedural models, " +
-            "surface deformation shaders, and post processing effects.",
+            "A procedurally modeled and animated jellyfish",
         image: thumb_st,
         github: "",
-        link: "/projects/town",
+        link: "/projects/jellyfish",
         tags: [
             { skill: "Unreal Engine"},
             { skill: "Blueprints"},
