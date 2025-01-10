@@ -4,12 +4,14 @@ import Link from 'next/link'
 import ExportedImage from "next-image-export-optimizer";
 import projects from '../data/project_data';
 import { BsGithub } from "react-icons/bs"
+import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { HiOutlineRefresh } from 'react-icons/hi';
 
 const ProjectSection = () => {
     const [filters, setFilters] = useState([
         { name: "Programming", checked: false },
         { name: "Tech Art", checked: false },
-        { name: "UX / UI", checked: false },
+        //{ name: "UX / UI", checked: false },
         { name: "Games", checked: false },
         { name: "3D Modeling", checked: false },
     ]);
@@ -32,7 +34,13 @@ const ProjectSection = () => {
     const filteredProjects = projects.filter(
         (project) => activeFilters.length === 0 || activeFilters.includes(project.filter)
     );
-    
+
+    // Reset all filters
+    const resetFilters = () => {
+        setFilters((prevFilters) =>
+            prevFilters.map((filter) => ({ ...filter, checked: false }))
+        );
+    };
 
     return (
         <section id="projects">
@@ -47,14 +55,24 @@ const ProjectSection = () => {
                     {filters.map((filter, idx) => (
                         <button
                             key={idx}
-                            className={`custom-flex-filters-styling ${
-                                filter.checked ? "bg-black text-white" : "bg-gray text-black"
+                            className={`custom-flex-filters-styling gap-2 items-center justify-center ${
+                                filter.checked ? "bg-black text-white" : "bg-gray text-black hover:bg-med_gray"
                             }`}
                             onClick={() => toggleFilter(idx)}
                         >
                             {filter.name}
+                            {filter.checked && 
+                                <AiOutlineCheckCircle size={20}/>
+                            }
                         </button>
                     ))}
+                    <button
+                        className="hover:text-hover_yellow flex flex-row items-center justify-center gap-2"
+                        onClick={resetFilters}
+                    >
+                        Reset Filters
+                        <HiOutlineRefresh/>
+                    </button>
                 </div>
             </div>
             <div className='custom-flex-center-span-height'>

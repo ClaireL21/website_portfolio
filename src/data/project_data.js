@@ -17,7 +17,18 @@ import thumb_ornament from "../webs_images/thumbnails/thumb_ornament.jpg";
 import thumb_dr from "../webs_images/thumbnails/thumb_dr.jpeg";
 import thumb_gr from "../webs_images/thumbnails/thumb_gr.jpeg";
 import thumb_nd from "../webs_images/thumbnails/thumb_nd.jpeg";
+import thumb_pathtracer from "../webs_images/thumbnails/thumb_pathtracer.jpg";
+import thumb_pbr from "../webs_images/thumbnails/thumb_pbr.jpg";
+import thumb_ssr from "../webs_images/thumbnails/thumb_ssr.jpg";
+import thumb_hk from "../webs_images/thumbnails/thumb_hk.png";
+import thumb_jf from "../webs_images/thumbnails/thumb_jelly.jpg";
+import thumb_lego from "../webs_images/thumbnails/thumb_lego.jpg";
 
+// TODO
+// chili lights
+// yarndiction
+// screen space reflection
+// two ui ux projects
 const projects = [
     {
         name: "Mini Minecraft: Pandora's Blocks",
@@ -66,16 +77,14 @@ const projects = [
         filter: "Tech Art",
     },
     {
-        name: "Stylized Shader Robot Scene",
+        name: "Procedural LEGO-ifier Tool",
         description: 
-            "Stylized toon shader with half tone shading, " +
-            "post processing effects, and interactivity.",
-        image: thumb_rb,
-        github: "",
-        link: "/projects/robot",
+            "A tool that takes any input mesh and outputs the same mesh composed of various lego blocks",
+        image: thumb_lego,
+        github: "https://github.com/ClaireL21/hw03-legos/tree/main",
+        link: "/projects/lego",
         tags: [
-            { skill: "Unity"},
-            { skill: "Shader Graph"},
+            { skill: "Houdini"},
         ],
         filter: "Tech Art",
     },
@@ -112,7 +121,7 @@ const projects = [
         name: "Monte Carlo Path Tracer",
         description: 
             "Cornell box path tracer",
-        image: thumb_st,
+        image: thumb_pathtracer,
         github: "",
         link: "/projects/pathtracer",
         tags: [
@@ -124,7 +133,7 @@ const projects = [
         name: "PBR",
         description: 
             "todo",
-        image: thumb_st,
+        image: thumb_pbr,
         github: "",
         link: "/projects/pbr",
         tags: [
@@ -136,12 +145,10 @@ const projects = [
         name: "SDF Fun",
         description: 
             "todo",
-        image: thumb_st,
+        image: thumb_hk,
         github: "",
         link: "/projects/sdf",
         tags: [
-            { skill: "Unreal Engine"},
-            { skill: "Blueprints"},
         ],
         filter: "Programming",
     },
@@ -159,14 +166,16 @@ const projects = [
         filter: "Games",
     },
     {
-        name: "Procedural LEGO-ifier Tool",
+        name: "Stylized Shader Robot Scene",
         description: 
-            "A tool that takes any input mesh and outputs the same mesh composed of various lego blocks",
-        image: thumb_st,
+            "Stylized toon shader with half tone shading, " +
+            "post processing effects, and interactivity.",
+        image: thumb_rb,
         github: "",
-        link: "/projects/lego",
+        link: "/projects/robot",
         tags: [
-            { skill: "Houdini"},
+            { skill: "Unity"},
+            { skill: "Shader Graph"},
         ],
         filter: "Tech Art",
     },
@@ -204,12 +213,11 @@ const projects = [
         name: "Procedural Jellyfish",
         description: 
             "A procedurally modeled and animated jellyfish",
-        image: thumb_st,
+        image: thumb_jf,
         github: "",
         link: "/projects/jellyfish",
         tags: [
-            { skill: "Unreal Engine"},
-            { skill: "Blueprints"},
+            { skill: "Houdini"},
         ],
         filter: "Tech Art",
     },

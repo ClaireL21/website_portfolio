@@ -207,6 +207,8 @@ module.exports = {
           borderRadius: '0.5rem',
         },
         '.custom-flex-filters-styling': { // bg-yellow-200 px-4 py-1 mt-2 text-neutral-900 rounded-lg font-semibold
+          display: 'flex',
+          flexDirection: 'row',
           fontSize: '1rem',
           //fontWeight: '400',
           paddingLeft: '1.5rem',
