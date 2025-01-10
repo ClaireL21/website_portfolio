@@ -60,8 +60,9 @@ const AboutSection = () => {
               </div>
              
               <Link
-                href="/"
+                href="https://drive.google.com/file/d/1RLbOtyZgr0ogwUGmRBPuv_zOf9oO1_RH/view?usp=sharing"
                 className="underline italic font-semibold hover:-translate-y-1 hover:custom-highlighted-text"
+                target='_blank'
                 >
                   Resume
               </Link>

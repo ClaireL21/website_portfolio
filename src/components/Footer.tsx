@@ -38,8 +38,9 @@ const Footer = () => {
                         </span>
                     </div>
                     <Link
-                    href="/"
+                    href="https://drive.google.com/file/d/1RLbOtyZgr0ogwUGmRBPuv_zOf9oO1_RH/view?usp=sharing"
                     className="font-regular italic underline hover:text-hover_yellow"
+                    target='_blank'
                     >
                     Resume
                     </Link>

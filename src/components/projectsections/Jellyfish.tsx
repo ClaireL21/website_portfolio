@@ -3,11 +3,16 @@
 import ExportedImage from "next-image-export-optimizer"
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs"
+import head from "../../webs_images/proj_images/jellyfish/head.png";
+import arms from "../../webs_images/proj_images/jellyfish/arms.png";
+import head_arms from "../../webs_images/proj_images/jellyfish/head_arm.jpg";
+import tent from "../../webs_images/proj_images/jellyfish/tentacles.png";
+import organs from "../../webs_images/proj_images/jellyfish/organs.png";
+import veins from "../../webs_images/proj_images/jellyfish/veins.png";
+import head_tent from "../../webs_images/proj_images/jellyfish/head_tent.png";
 
 const tags = [
-    { skill: "Unreal Engine"},
-    { skill: "Blueprints"},
-    { skill: "VR"},
+    { skill: "Houdini"},
 ]
 
 const JellyfishSection = () => {
@@ -15,28 +20,17 @@ const JellyfishSection = () => {
     <div>
         <section id="jellyfish">
             <h1 className="text-center font-bold text-3xl">
-                Jellyfish
+            Procedural Jellyfish
             </h1>
             <div className="md:w-4/5 custom-body align-center items-center justify-center text-center">                
                 <div className="md:h-[600px] h-[300px]">
-                    <iframe className="custom-video-container" src="https://www.youtube.com/embed/g3RljdQFxnE?si=ca0l2gBDIDO79w5E" 
+                    <iframe className="custom-video-container" src="https://www.youtube.com/embed/-JjSAfr1sEk?si=LnSdGsV8-zWOemlj" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                </div>
-                <div className="italic mt-2">
-                    Byakugan Gameplay Features Demo; Footage recorded through Meta Quest 3 VR headset
                 </div>
             </div>
             <div className='custom-body-2'>
-                <h1 className="custom-subheading-2">
-                    Overview
-                </h1>
-                <div className="mt-2">
-                    This project was a three person group project for CIS 5680, Game Design Practicuum.
-                </div>
-                <div className="mt-2">
-                    The player is spawned as a ninja in the middle of a bamboo forest. They must find the sword
-                    spawned nearby. Once they grab it, enemy ninjas will come from all directions around them. 
-                    They must defeat enemies by slashing their sword with "qi" channeled. 
+                <div className="italic mt-2">
+                A procedurally modeled and animated jellyfish
                 </div>
                 <div className="custom-flex-tags-component">
                     {tags.map((item, idx) => {
@@ -48,7 +42,7 @@ const JellyfishSection = () => {
                         </p>
                     )
                     })}
-                    <Link href={"https://github.com/ClaireL21/Byakugan-VR-Game"} target="_blank">
+                    <Link href={"https://github.com/ClaireL21/hw02-jellyfish/tree/main?tab=readme-ov-file"} target="_blank">
                             <BsGithub
                                 size={30}
                                 className="mt-2 hover:-translate-y-1 transition-transform cursor-pointer"
@@ -56,62 +50,116 @@ const JellyfishSection = () => {
                     </Link>
                 </div>
                 <h1 className="custom-subheading-2">
-                    Major Features
+                    Overview
                 </h1>
-                <div className="mt-2 font-bold">
-                Sword Slashing as a Mechanism to Defeat Incoming Ninjas
+                <div className="mt-2">
+                    This project was a project for CIS 5660, Procedural Graphics.
                 </div>
-                <div>
-                <ul className="px-8 list-disc">
-                    <li>The sword collision method supports any type of sword slashing movements (i.e. poking, horizontal, vertical, diagonal slashes)
-                    </li>
-                    <li>
-                    A speed threshold must be reached by the player when slashing the sword. The sword simply coming into contact with the player is not enough – this is to prevent the player from simply rotating in a circle to defeat incoming enemies, essentially forcing them to perform slash motions, which increases their immersion in the game. 
-                    </li>
-                </ul>
-                <div className="mt-2 font-bold">
-                    Sword Qi system
-                </div>
-                <ul className="px-8 list-disc">
-                    <li>
-                    Qi is channeled into the sword by holding the left controller trigger. Releasing the trigger stops it from being channeled.
-                    </li>
-                    <li>
-                    When Qi is channeled, the player is notified with both visual + auditory feedback. They hear a “whoosh” sound when channeling qi, and a different pitched “whoosh” sound when releasing the qi trigger. Visually, they can see the sword transition from a neutral blue color to a bright orange glow.
-                    </li>
-                </ul>
-                <div className="mt-2 font-bold">
-                    Player’s Sixth Sense
-                </div>
-                <ul className="px-8 list-disc">
-                    <li>
-                    As a ninja, the player has a “sixth sense” that alerts them of incoming enemies approaching them from behind.
+                <div className="mt-2">
+                For my procedural jellyfish, I decided to create a glowy, shiny gold and white jellyfish.
 
-                    </li>
-                    <li>
-                    This sixth sense takes the form of a soft orange post-processing overlay that is visible along the circumference of the headset. If an enemy approaches them from behind, the overlay appears and, after a delay of 1 second, it disappears. 
-                    </li>
-                    <li>
-                    (Note: recording gameplay footage through the meta quest camera app can only record footage through the left or right eye. The gameplay + trailer videos are all recorded through the left eye, so only the left half of the post processing is visible in the videos. Playing and viewing through the headset will show the actual post processing effect.)
+                I started by creating the bell and the arms of the jellyfish.
 
-                    </li>
-                    <li>
-                    Lastly, we have incorporated spatial audio via footsteps sound effects. The player can distinguish what direction the enemies are coming from by paying attention to what direction the footstep sounds are coming from. This also helps to enhance player immersion into the game. 
+                I made the bell by using a line node, bending it, and then revolving it to create a hemispherical shape. I then used the mountain node to give it a more organic look, and extruded it to give it some thickness.
 
-                    </li>
-                </ul>
+                For the arms, I started with a rectangular grid, added ruffles to it by adding a noise values to the points based on their location on the grid, and then applied a twist to it. I used a cloth constraint to make it look stretchier and matched it to the animation of the bell by using a point deform node.
                 </div>
-                <h1 className="custom-subheading-2">
-                    User's Guide
-                </h1>
-                <div className="mt-2" style={{ whiteSpace: "pre-line" }}>
-                1. As the player, your main objective is to kill as many enemy ninjas as possible in order to achieve the highest score.{"\n"}
-                2. To begin playing, look at the ground and pick up the sword. Once the sword is picked up, enemies will begin to spawn. {"\n"}
-                3. In order to kill an enemy, the player must release qi using left trigger as the sword collides with an enemy, otherwise the ninja will not die. {"\n"}
-                4. The player can kill enemies in a variety of ways, whether that be by poking, slashing, chopping, etc. as long as a minimum linear velocity threshold has been met.{"\n"}
-                5. As the player kills enemies, their score will be incremented and can be seen on a wood block to the left of the player.{"\n"}
-                6. The player can also view their qi gauge by looking at their left hand, which additionally displays how many lives they have, which is 3 lives by default.{"\n"}
-                7. If the player loses all of their lives, they will die and their score will be reset where they can choose to play again.
+
+                <div className="custom-row-images flex items-stretch justify-center">
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={head}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={arms}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={head_arms}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
+                </div>
+                <div className="mt-2">
+                To create the veins, I used the shortest path node. First, I described a set of points on the 
+                jellyfish bell to be the start points and another set of points to be the end points. Calculating
+                 the shortest paths from each of the endpoints to a subset of the startpoints gave a nice veiny 
+                 look that worked well for the jellyfish. The most challenging part about using the shortest path
+                  node, though, was getting the animation to run smoothly with the bell. At first, when trying to 
+                  deform the paths to match the surface of the bell, the shortest path node would recalculate paths 
+                  and the veins would change. I then tried using a timeshift node to freeze the calculations at the 
+                  first frame - however, this caused the veins to no longer move with the bell. In the end, I found 
+                  the solution to be using two timeshifts. The first timeshift is for calculating the shortest paths 
+                  and creating the veins. Then, the second one references the original bell geometry and deforms the 
+                  veins points based on that. This allowed the veins to move with the bell without recalculating paths!
+                </div>
+                <div className="custom-row-images flex items-stretch justify-center">
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={veins}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={organs}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
+                </div>
+                <div className="mt-2">
+                    Next, I created the organs. For this, I created a line, used several bends to make it in the shape I wanted, and then gave it thickness and copied it for a total of four pieces.
+                </div>
+
+                <div className="mt-2">
+                Lastly, I created the tentacles. I wanted the tentacles to be attached to the jellyfish along the circumference of the bottom of the bell. I used a torus and a scatter node to create a ring of points from which I could later generate lines. The jellyfish's bell isn't completely circular, though, so the points didn't match up perfectly with the bottom of the node. In order to fix this, I used a ray node to project the points onto the surface of the bell. However, because of the bell's upward-downward animation, the points weren't always projected onto the rim of the bell, so I first deformed the points to move along with the animation of the jellyfish and then used the ray node to project the points. After this, I copied lines to the points to give it more of a tentacle shape, used a hair constraint and vellum solver to help capture the movement of the tentacles, and used a sweep node to give it some thickness.
+                </div>
+                <div className="custom-row-images flex items-stretch justify-center">
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={tent}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
+                    <div className="h-[250px] p-2">
+                        <ExportedImage
+                            className="h-full w-auto object-contain"
+                            src={head_tent}
+                            alt="" 
+                            width={400}
+                            height={400}
+                            >
+                        </ExportedImage>
+                    </div>
                 </div>
             </div>
         </section>

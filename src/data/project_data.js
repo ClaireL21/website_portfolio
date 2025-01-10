@@ -214,7 +214,7 @@ const projects = [
         description: 
             "A procedurally modeled and animated jellyfish",
         image: thumb_jf,
-        github: "",
+        github: "https://github.com/ClaireL21/hw02-jellyfish/tree/main?tab=readme-ov-file",
         link: "/projects/jellyfish",
         tags: [
             { skill: "Houdini"},

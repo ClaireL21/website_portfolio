@@ -43,19 +43,19 @@ const OrnamentSection = () => {
                     <iframe className="custom-video-container" src="https://www.youtube.com/embed/J5084l2l8oY?si=6j5lLW8s0bGsygVO" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
-                <div className="italic mt-2">
-                    Procedural Ornament Tool Demo
-                </div>
             </div>
             
             <div className='custom-body-2'>
+                <div className="italic mt-2">
+                    Procedural Ornament Tool Demo
+                </div>
                 <h1 className="custom-subheading-2">
                     Tool Final Look on Carousels
                 </h1>
-                <div className="custom-row-images items-stretch justify-center">
-                    <div className="md:w-1/4 p-2">
+                <div className="custom-row-images flex items-stretch justify-center">
+                    <div className="h-[350px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={car1}
                             alt="" 
                             width={400}
@@ -63,9 +63,9 @@ const OrnamentSection = () => {
                             >
                         </ExportedImage>
                     </div>
-                    <div className="md:w-1/4 p-2">
+                    <div className="h-[350px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={car2}
                             alt="" 
                             width={400}
@@ -73,9 +73,9 @@ const OrnamentSection = () => {
                             >
                         </ExportedImage>
                     </div>
-                    <div className="md:w-1/4 p-2">
+                    <div className="h-[350px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={car3}
                             alt="" 
                             width={400}
@@ -83,9 +83,9 @@ const OrnamentSection = () => {
                             >
                         </ExportedImage>
                     </div>
-                    <div className="md:w-1/4 p-2">
+                    <div className="h-[350px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={car4}
                             alt="" 
                             width={400}
@@ -372,10 +372,10 @@ const OrnamentSection = () => {
                 <div className="mt-2">
                     Here are some close-ups on the final carousels!
                 </div>
-                <div className="custom-row-images items-stretch justify-center">
-                    <div className="md:w-1/4 p-2">
+                <div className="custom-row-images flex items-stretch justify-center">
+                    <div className="h-[150px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={or1}
                             alt="" 
                             width={400}
@@ -383,9 +383,9 @@ const OrnamentSection = () => {
                             >
                         </ExportedImage>
                     </div>
-                    <div className="md:w-1/4 p-2">
+                    <div className="h-[150px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={or2}
                             alt="" 
                             width={400}
@@ -393,9 +393,9 @@ const OrnamentSection = () => {
                             >
                         </ExportedImage>
                     </div>
-                    <div className="md:w-1/4 p-2">
+                    <div className="h-[150px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={or3}
                             alt="" 
                             width={400}
@@ -403,9 +403,9 @@ const OrnamentSection = () => {
                             >
                         </ExportedImage>
                     </div>
-                    <div className="md:w-1/4 p-2">
+                    <div className="h-[150px] p-2">
                         <ExportedImage
-                            className="w-full h-auto"
+                            className="h-full w-auto object-contain"
                             src={or4}
                             alt="" 
                             width={400}
